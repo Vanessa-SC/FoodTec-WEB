@@ -1,14 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('../img/FONDO.jpg');
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
 }
 
-.orange{
-  background-color: !important #ff5b00;
+.bg-orange{
+  background-color: #ff5b00 !important;
+}
+
+.nav-link{
+  padding: none !important;
+}
+
+.sidebar{
+  background-color: #ddd !important;
+}
+
+.sidebar .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .login-contenedor {

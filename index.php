@@ -6,8 +6,18 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>FoodTec!</title>
 		<link rel="stylesheet" href="css/estilos.css">
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				background: url('img/FONDO.jpg');
+				background-size: cover;
+				font-family: sans-serif;
+				height: 100vh;
+			}
+		</style>
 	</head>
-	<body>
+	<body class="login">
 		<div class="login-contenedor">
 			<img src="img/logo2.png" class="avatar" alt="avatar image">
 			<h1>¡bienvenido!</h1>
