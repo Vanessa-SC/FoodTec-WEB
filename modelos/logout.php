@@ -2,5 +2,5 @@
     session_start();
     session_destroy();
     
-    die("<script>location.href='../views/login.php';</script>");
+    die("<script>location.href='../index.php';</script>");
 ?>

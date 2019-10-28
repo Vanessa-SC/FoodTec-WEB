@@ -5,7 +5,7 @@
             Pedidos</div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="tablaPedidos" width="100%" cellspacing="0">
                   <thead>
                     <tr>
                       <th>Usuario</th>
@@ -22,7 +22,7 @@
                       <td>Concha</td>
                       <td>Blanca</td>
                       <td>1</td>
-                      <td>PENDIENTE</td>
+                      <td>PENDIENTE <span class="aceptar"><a href="" class="icono-check"></a></span> </td>
                     </tr>
                   </tbody>
                 </table>

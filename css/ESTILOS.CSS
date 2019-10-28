@@ -1,11 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   background-size: cover;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
 }
 
+.aceptar {
+	box-shadow: 2px 13px 22px -7px #5dcf3e;
+	background:linear-gradient(to bottom, #1db345 5%, #83eb4c 100%);
+	background-color:#1db345;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:-3px 2px 0px #35a122;
+}
+
+.aceptar:hover {
+	background:linear-gradient(to bottom, #83eb4c 5%, #1db345 100%);
+	background-color:#83eb4c;
+}
+.aceptar:active {
+	position:relative;
+	top:1px;
+}
+
+.usuarioPhoto{
+    width: 200px;
+}
 .bg-orange{
   background-color: #ff5b00 !important;
 }
