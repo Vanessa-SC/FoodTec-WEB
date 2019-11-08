@@ -8,6 +8,17 @@ body {
   height: 100vh;
 }
 
+.tabladir{
+    background: #000 !important;
+}
+
+th {
+    text-align: center;
+    max-width:120px;;
+}
+td{
+    border:none !important;
+}
 .aceptar {
 	box-shadow: 2px 13px 22px -7px #5dcf3e;
 	background:linear-gradient(to bottom, #1db345 5%, #83eb4c 100%);

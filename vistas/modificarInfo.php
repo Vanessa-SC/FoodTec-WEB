@@ -49,12 +49,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="description text-center">
-                            <p>Direccion:
-                                <?php echo 'Colonia Primero de Mayo, Calle 29 de septiembre, #410'; ?>
-                            </p>
-                            <button type="button" id="modificar_btn" class="btnAct" onclick=" location.href='modificarInfo.php' ">Actualizar info.</button>
-                        </div>
+                        <form id="formulario_mod" method="post" action="modelos/actualizarInfo.php">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="telefonoMod">Telefono</label>
+                                    <input type="text" class="form-control" id="telefonoMod" placeholder="Telefono">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="direccionMod">Direccion</label>
+                                    <input type="text" class="form-control" id="direccionMod" placeholder="Colonia.. calle.. numero..">
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="btnAct">Actualizar info.</button>
                     </div>
                 </div>
             </div>
