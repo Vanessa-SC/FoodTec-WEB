@@ -50,9 +50,27 @@
                             </div>
                         </div>
                         <div class="description text-center">
-                            <p>Direccion:
-                                <?php echo 'Colonia Primero de Mayo, Calle 29 de septiembre, #410'; ?>
-                            </p>
+                           
+                           <?php 
+                            include('../modelos/conexionOO.php');
+                            $nomb= $_SESSION['nombre'];
+                            $query=("SELECT direccion,telefono FROM restaurante WHERE nombre='$nomb'"); 
+                            
+                            $result = $conn->query($query) or die ($conn->error.__LINE__);
+
+                            $row_cnt = $result->num_rows;
+                            $reg = mysqli_fetch_assoc($result);
+
+                            if ( $row_cnt == 1 ) {
+                               echo "<p> Dirección: <br>"; 
+                               echo $reg["direccion"]."</p>";
+                               echo "<p> Telefono: <BR>"; 
+                               echo $reg["telefono"]."</p>";
+                            } else {
+                                $respuesta = "<p>Ninguna información registrada </p>";
+                            }
+                            ?> 
+                           
                             <button type="button" id="modificar_btn" class="btnAct" onclick=" location.href='modificarInfo.php' ">Actualizar info.</button>
                         </div>
                     </div>
