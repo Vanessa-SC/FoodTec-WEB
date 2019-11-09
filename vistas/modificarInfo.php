@@ -49,22 +49,23 @@
                                 </div>
                             </div>
                         </div>
-                        <form id="formulario_mod" method="post" action="modelos/actualizarInfo.php">
+                        <form id="formulario_mod" method="post" action="../modelos/actualizarInfo.php">
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="telefonoMod">Telefono</label>
-                                    <input type="text" class="form-control" id="telefonoMod" placeholder="Telefono">
+                                    <input type="text" class="form-control" name="telefonoMod" placeholder="Telefono">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="direccionMod">Direccion</label>
-                                    <input type="text" class="form-control" id="direccionMod" placeholder="Colonia.. calle.. numero..">
+                                    <input type="text" class="form-control" name="direccionMod" placeholder="Colonia.. calle.. numero..">
                                 </div>
                             </div>
-                        </form>
-                        <button type="button" class="btnAct">Actualizar info.</button>
+                            <input type="submit" class="btnAct" value="Actualizar info.">
                     </div>
+                        </form>
+                        
                 </div>
             </div>
         </div>
