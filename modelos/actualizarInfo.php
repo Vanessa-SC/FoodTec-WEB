@@ -8,17 +8,21 @@
 		$direccion = $_POST["direccionMod"];
 		$telefono = $_POST["telefonoMod"];
 
+    if($direccion != "" && $telefono != ""){
+    
 		$query = "update restaurante set telefono='$telefono',
 			      direccion='$direccion' where nombre='$nombre'";
 
-        $result = $conn->query($query) or die($conn->error.__LINE__);
-        
-        if($result){
+        if(mysqli_query($conn,$query)) {
             header('Location: ../vistas/perfil.php');
         } else {
-            ?>
-<script type="text/javascript">alert('No se pudo actualizar, intente m&aacute;s tarde.');</script>
-<?php
+            $respuesta = "Error: " .$query."<br>".mysqli_error($conn);
         }
-//		echo "Informacion actualizada correctamente";
-?>
+
+        mysqli_close($conn);
+    } else {
+        $respuesta = "Telefono y direccion vacios";
+    }
+        
+?>    
+        

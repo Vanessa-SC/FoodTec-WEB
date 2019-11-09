@@ -12,7 +12,7 @@
 </head>
 <?php include_once 'layouts/header.php'; ?>
 
-<body class="profile-page" onload="ocultar()">
+<body class="profile-page">
     <nav class="navbar navbar-expand navbar-dark bg-orange static-top">
         <a class="navbar-brand mr-1" href="/../Foodtec-WEB/vistas/home.php">FoodTec!</a>
 
@@ -28,6 +28,7 @@
             </li>
         </ul>
     </nav>
+    
     <div id="wrapper">
         <?php include_once 'layouts/sidebar.php'; ?>
         <div id="contenido" style="margin:10px;">
@@ -70,8 +71,9 @@
             </div>
         </div>
     </div>
-
+       <?php include_once ('layouts/logout.php'); ?>
 </body>
+
 
 <style>
     .btnAct {
