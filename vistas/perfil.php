@@ -28,6 +28,7 @@
             </li>
         </ul>
     </nav>
+    <?php include('layouts/logout.php'); ?>
     <div id="wrapper">
         <?php include_once 'layouts/sidebar.php'; ?>
         <div id="contenido" style="margin:10px;">
