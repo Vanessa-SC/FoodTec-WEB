@@ -12,7 +12,7 @@
 </head>
 <?php include_once 'layouts/header.php'; ?>
 
-<body class="profile-page" onload="ocultar()">
+<body class="profile-page">
     <nav class="navbar navbar-expand navbar-dark bg-orange static-top">
         <a class="navbar-brand mr-1" href="/../Foodtec-WEB/vistas/home.php">FoodTec!</a>
 
@@ -31,7 +31,7 @@
     <div id="wrapper">
         <?php include_once 'layouts/sidebar.php'; ?>
         <div id="contenido" style="margin:10px;">
-            <div class="page-header header-filter" data-parallax="true" style="background-image:url('../img/Banner.jpg');"></div>
+            <div class="page-header header-filter" data-parallax="true" style="height: 190px;background-image:url('../img/Banner.jpg');"></div>
             <div class="main main-raised">
                 <!--               <input type="submit" class="botonimagen rounded-circle  " value="">-->
 
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-
+    <?php  include_once('layouts/logout.php');?>
 </body>
 
 <style>
